@@ -1,0 +1,41 @@
+HDRS = 	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2020\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "Base_Defence.c" = "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441" ;
+Object "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\Base_Defence.obj" : "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\Base_Defence.c" ;
+FILENUM on "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\Base_Defence.obj" = 1 ;
+DEFPROTS on "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\Base_Defence.obj" = "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\Base_Defence.obj.cvidefprots" ;
+OUTFILE on "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\Base_Defence.obj" = "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\Base_Defence.obj.out" ;
+PrjObjects += "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\Base_Defence.obj" ;
+Object "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\resources.res" : "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\resources.in.rc" ;
+Depends "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\resources.res" : "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\manifest.xml" ;
+MainFromObjects "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\Base_Defence.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\Base_Defence.exe" : "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\link_options.txt" ;
+Depends "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\Base_Defence.exe" : "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\resources.res" ;
+Depends all : "c:\\Users\\Roy\\Documents\\Programing_Mechatronics\\Final_Project\\Roy_Arad_308545441\\cvibuild.Base_Defence\\Release\\Base_Defence.exe" ;
